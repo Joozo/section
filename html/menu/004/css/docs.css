@@ -12,10 +12,6 @@ body {
     background-size: cover;
 }
 
-.ct-navbar-brand img {
-	height: 22px;
-}
-
 /*pc style*/
 
 @media (min-width: 768px) {
@@ -26,8 +22,5 @@ body {
 /*pad and phone style */
 
 @media (max-width: 767px) {
-	.ct-fr {
-		float: none;
-	}
 
 }

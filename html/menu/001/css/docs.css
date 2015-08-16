@@ -19,7 +19,7 @@ body {
     z-index: 700;
     width: 100%;
     box-shadow: 0 0px 5px #999;
-    background: #fff;
+    background: rgba(255,255,255,.8);
     text-decoration: none;
 }
 

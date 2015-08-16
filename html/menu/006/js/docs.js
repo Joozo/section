@@ -11,7 +11,7 @@ $(function() {
             $(this).parent().next(".ct-navbar-collapse").slideToggle(400);
         });
         $(".ct-dropdown-menu").css("display", "none");
-    };
+    }
 
     $(window).scroll(function() {
         if ($(this).scrollTop() >= 40) {

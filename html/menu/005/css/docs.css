@@ -12,8 +12,8 @@ body {
     background-size: cover;
 }
 
-.ct-navbar-brand img {
-	height: 22px;
+.ct-bg {
+    background: rgba(255, 255, 255, .5);
 }
 
 /*pc style*/
@@ -26,8 +26,5 @@ body {
 /*pad and phone style */
 
 @media (max-width: 767px) {
-	.ct-fr {
-		float: none;
-	}
 
 }

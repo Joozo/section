@@ -1,0 +1,52 @@
+/*common style*/
+
+* {
+    font-family: "Microsoft Yahei";
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 1700px;
+    background: url(http://section.joo.pub/libs/img/bg/dark2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.ct-bg {
+    background: rgba(255, 255, 255, .5);
+}
+
+.ct-navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*pc style*/
+
+.ct-nav > li > a {
+    padding: 49px 25px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.ct-nav > li > a.fixed-nav {
+	padding: 25px 25px;
+    font-size: 16px;
+}
+
+.ct-navbar-brand.fixed-brand img {
+	max-height: 50px;
+}
+
+.ct-navbar-inverse .ct-navbar-nav>.active>a,
+.ct-navbar-inverse .ct-navbar-nav>.active>a:focus,
+.ct-navbar-inverse .ct-navbar-nav>.active>a:hover {
+	background: rgba(0,0,0,.9);
+	color: #2dbe60;
+}
+
+@media (min-width: 768px) {}
+
+
+/*pad and phone style */
+
+@media (max-width: 767px) {}
