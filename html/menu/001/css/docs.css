@@ -1,121 +1,146 @@
 /*common style*/
+
 * {
-	font-family: "Microsoft Yahei";
-	text-decoration: none;
-	box-sizing: border-box;
+    font-family: "Microsoft Yahei";
+    text-decoration: none;
+    box-sizing: border-box;
 }
+
+body {
+    height: 1200px;
+    background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 .logocenter {
-  position: absolute;
-  top: 40px;
-  height: 64px;
-  z-index: 700;
-  width: 100%;
-  box-shadow: 0 0px 5px #999;
-  background: #fff;
-  text-decoration: none;
+    position: absolute;
+    top: 40px;
+    height: 64px;
+    z-index: 700;
+    width: 100%;
+    box-shadow: 0 0px 5px #999;
+    background: #fff;
+    text-decoration: none;
 }
+
 .logocenter .logo {
-  position: absolute;
-  z-index: 701;
-  left: 44.3%;
-  float: left;
-  margin: 9px 0 0 0;
-  cursor: pointer;
-  max-width: 120px;
+    position: absolute;
+    z-index: 701;
+    left: 44.3%;
+    float: left;
+    margin: 9px 0 0 0;
+    cursor: pointer;
+    max-width: 120px;
 }
+
 .logocenter .ct-navbar-default {
-  background-color: transparent;
-  border-color: transparent;
+    background-color: transparent;
+    border-color: transparent;
 }
+
 .logocenter .ct-navbar {
-  min-height: 64px;
-  margin-bottom: 20px;
+    min-height: 64px;
+    margin-bottom: 20px;
 }
+
 .logocenter .ct-navbar-nav > .active > a,
 .logocenter .ct-navbar-nav > .active > a:hover,
 .logocenter .ct-navbar-nav > .active > a:focus,
 .logocenter .ct-navbar-nav > li > a:hover,
 .logocenter .ct-navbar-nav > li > a:focus {
-  color: #2dbe60 !important;
-  background-color: transparent;
+    color: #2dbe60 !important;
+    background-color: transparent;
 }
+
 .logocenter .ct-navbar-default .ct-navbar-left > li > a {
-  margin: 0px 20px;
+    margin: 0px 20px;
 }
+
 .logocenter .ct-navbar-default .ct-navbar-nav > li > a {
-  color: #2d2d2d;
-  font-weight: 500;
-  float: left;
-  font-size: 15px;
-  text-transform: capitalize;
-  margin: 0px 20px;
-  transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color: #2d2d2d;
+    font-weight: 500;
+    float: left;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0px 20px;
+    transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .logocenter .ct-nav > li > a {
-  padding: 20px 0;
+    padding: 20px 0;
 }
+
 .logocenter.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 998;
-  -webkit-transform: translateZ(0);
-}
-.logocenter .ct-container {
-  font-size: 12px;
-  line-height: 1.643;
-}
-.logocenter .brand {
-  display: block;
-  margin: 25px 24px 0 0;
-  float: left;
-  width: 162px;
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
-}
-.logocenter .fixedb {
-  width: 130px;
-  margin: 10px 24px 0 0;
-  height: auto;
-}
-/*pc style*/
-@media (min-width: 768px) {
-  .logocenter .ct-navbar-default .ct-ct-navbar-nav > li > a {
-    font-size: 14px;
-    margin: 0 15px;
-  }
-}
-/*pad and phone style */
-@media (max-width: 767px) {
-  .logocenter {
+    position: fixed;
     top: 0;
-  }
-  .logocenter .logo {
     left: 0;
-  }
-  .logocenter .ct-navbar-toggle {
-    margin-top: 15px;
-  }
-  .logocenter .ct-navbar-default .ct-navbar-nav > li > a {
-    margin: 0;
-    border-bottom: solid 3px #666666;
-    line-height: 0px;
-    float: none;
-  }
-  .logocenter .ct-navbar-default .ct-navbar-nav > .active > a,
-  .logocenter .ct-navbar-default .ct-navbar-nav > .active > a:hover,
-  .logocenter .ct-navbar-default .ct-navbar-nav > .active > a:focus {
-    border-bottom: solid 3px #2dbe60 !important;
-  }
-  .logocenter .ct-navbar-default .ct-navbar-nav > li > a:hover,
-  .logocenter .ct-navbar-default .ct-navbar-nav > li > a:focus {
-    color: #00cfef;
-    border-bottom: solid 3px #2dbe60;
-  }
-  .logocenter .ct-navbar-default .ct-navbar-collapse {
-    border-color: transparent;
-    width: 100%;
+    right: 0;
+    z-index: 998;
+    -webkit-transform: translateZ(0);
+}
+
+.logocenter .ct-container {
     font-size: 12px;
-  }
+    line-height: 1.643;
+}
+
+.logocenter .brand {
+    display: block;
+    margin: 25px 24px 0 0;
+    float: left;
+    width: 162px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.logocenter .fixedb {
+    width: 130px;
+    margin: 10px 24px 0 0;
+    height: auto;
+}
+
+
+/*pc style*/
+
+@media (min-width: 768px) {
+    .logocenter .ct-navbar-default .ct-ct-navbar-nav > li > a {
+        font-size: 14px;
+        margin: 0 15px;
+    }
+}
+
+
+/*pad and phone style */
+
+@media (max-width: 767px) {
+    .logocenter {
+        top: 0;
+    }
+    .logocenter .logo {
+        left: 0;
+    }
+    .logocenter .ct-navbar-toggle {
+        margin-top: 15px;
+    }
+    .logocenter .ct-navbar-default .ct-navbar-nav > li > a {
+        margin: 0;
+        border-bottom: solid 3px #666666;
+        line-height: 0px;
+        float: none;
+    }
+    .logocenter .ct-navbar-default .ct-navbar-nav > .active > a,
+    .logocenter .ct-navbar-default .ct-navbar-nav > .active > a:hover,
+    .logocenter .ct-navbar-default .ct-navbar-nav > .active > a:focus {
+        border-bottom: solid 3px #2dbe60 !important;
+    }
+    .logocenter .ct-navbar-default .ct-navbar-nav > li > a:hover,
+    .logocenter .ct-navbar-default .ct-navbar-nav > li > a:focus {
+        color: #00cfef;
+        border-bottom: solid 3px #2dbe60;
+    }
+    .logocenter .ct-navbar-default .ct-navbar-collapse {
+        border-color: transparent;
+        width: 100%;
+        font-size: 12px;
+    }
 }

@@ -1,0 +1,33 @@
+/*common style*/
+
+* {
+    font-family: "Microsoft Yahei";
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1200px;
+    background: url(http://section.joo.pub/libs/img/bg/light2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.ct-navbar-brand img {
+	height: 22px;
+}
+
+/*pc style*/
+
+@media (min-width: 768px) {
+
+}
+
+
+/*pad and phone style */
+
+@media (max-width: 767px) {
+	.ct-fr {
+		float: none;
+	}
+
+}

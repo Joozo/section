@@ -1,3 +1,8 @@
+.ct-border-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .ct-center-block {
   display: block;
   margin-right: auto;
