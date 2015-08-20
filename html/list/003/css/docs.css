@@ -1,0 +1,88 @@
+/*common style*/
+* {
+  font-family: 'Microsoft Yahei';
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul,
+ol,
+dd,
+dt,
+dl {
+  list-style: none outside none;
+}
+body {
+  min-height: 1700px;
+  background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.text-lists {
+  font-family: "Microsoft Yahei";
+}
+.text-lists .news-table {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+}
+.text-lists .news-table li {
+  display: table;
+  width: 100%;
+  background-color: #f5f4f3;
+  color: #5b5b5b;
+  display: table-row;
+  border-bottom: 1px solid #dcdddd;
+  -webkit-transition: all 250ms 50ms ease-in-out;
+          transition: all 250ms 50ms ease-in-out;
+}
+.text-lists .news-table li .date {
+  width: 80px;
+  padding: .5em 0;
+  color: #cbcecf;
+  background: #f8f7f7;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin-right: 1em;
+  height: 100%;
+  border-right: 1px solid white;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: 600;
+  -webkit-transition: all 250ms 50ms ease-in-out;
+          transition: all 250ms 50ms ease-in-out;
+}
+.text-lists .news-table li .date .strong {
+  font-size: 36px;
+  display: block;
+}
+.text-lists .news-table li .title {
+  padding: .5em 1em 1em;
+  display: table-cell;
+}
+.text-lists .news-table li .title .text-h4 {
+  display: block;
+  margin: .3em 0;
+  color: #5b5b5b;
+  font-weight: 700;
+  font-size: 16px;
+}
+.text-lists .news-table li .title .text-p {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: #5b5b5b;
+}
+.text-lists .news-table li:hover {
+  background: rgba(45, 190, 96, 0.8);
+}
+.text-lists .news-table li:hover *,
+.text-lists .news-table li:hover .title .text-h4,
+.text-lists .news-table li:hover .title .text-p {
+  color: #fff;
+}
+.text-lists .news-table li:hover .date {
+  background: #41d274;
+  border-right: 1px solid #46d779;
+}

@@ -1,8 +1,8 @@
 /*common style*/
 * {
-  font-family: "Microsoft Yahei";
-  text-decoration: none;
+  font-family: 'Microsoft Yahei';
   box-sizing: border-box;
+  text-decoration: none;
 }
 ul,
 ol,
@@ -21,83 +21,121 @@ body {
 }
 .thumbs-all {
   display: block;
-  text-align: center;
-  padding: 50px 0;
   overflow-x: hidden;
   width: 100%;
+  padding: 50px 0;
+  text-align: center;
 }
 .thumbs-all .portfolio {
   padding: 20px 0 0 0;
 }
 .thumbs-all h1.subtitle {
   font-size: 55px;
-  line-height: 1.2;
   font-weight: 400;
-  text-transform: none;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
   letter-spacing: -2px;
+  text-transform: none;
   color: #676767;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .thumbs-all p.title-detail {
   font-size: 18px;
-  line-height: 1.2;
-  color: #333333;
   font-weight: 300;
+  line-height: 1.2;
+  color: #333;
 }
 .thumbs-all .filter {
   margin: 30px 0 30px 0;
   text-align: center;
 }
-.thumbs-all .filter a {
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  color: #222222;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 12px 21px;
-  margin: 0 3px;
-  font-family: 'Open Sans', 'Microsoft Yahei';
-  -webkit-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out;
-  font-weight: 400;
-}
 .thumbs-all .filter a:hover,
 .thumbs-all .filter a.selected {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   background: rgba(45, 190, 96, 0.8);
+}
+.thumbs-all .filter a {
+  font-family: 'Open Sans', 'Microsoft Yahei';
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 3px;
+  padding: 12px 21px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .thumbs-all .portfolio_list {
   display: none;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
   text-align: left;
 }
 .thumbs-all .portfolio_list li {
-  float: left;
+  position: relative;
   display: block;
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
   margin: 0;
   padding: 0;
-  width: 25%;
-  box-sizing: border-box;
+  overflow: hidden;
 }
 .thumbs-all .portfolio_list li img {
+  display: block;
   width: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
-  height: auto;
   border: none;
+  -webkit-transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.9s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .thumbs-all .portfolio_list.active {
   display: block;
 }
 .thumbs-all .portfolio_list:after {
-  content: "";
   display: table;
+  content: '';
+}
+.thumbs-all .portfolio_list .img-hover {
+  box-sizing: border-box;
+}
+.thumbs-all .portfolio_list .img-hover .img-hover-text {
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  color: rgba(45, 190, 96, 0.8);
+  box-sizing: border-box;
+  -webkit-transform: translate3D(-100%, 0, 0);
+      -ms-transform: translate3D(-100%, 0, 0);
+          transform: translate3D(-100%, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.thumbs-all .portfolio_list .img-hover .img-hover-text .ct-h3 {
+  line-height: 1.5;
+}
+.thumbs-all .portfolio_list .img-hover:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.thumbs-all .portfolio_list .img-hover:hover .img-hover-text {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  background: rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 768px) {
   .thumbs-all {
@@ -128,19 +166,10 @@ body {
     font-size: 30px;
     font-weight: 200;
   }
-  .thumbs-all h1.light span {
-    font-size: 30px !important;
-  }
   .thumbs-all h1.subtitle {
     font-size: 35px;
   }
-  .thumbs-all h1.subtitle span {
-    font-size: 35px !important;
-  }
   .thumbs-all p.title-detail {
-    font-size: 18px !important;
-  }
-  .thumbs-all p.title-detail span {
     font-size: 18px !important;
   }
   .thumbs-all .portfolio_list li {

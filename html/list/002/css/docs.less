@@ -1,0 +1,117 @@
+/*common style*/
+
+* {
+    font-family: 'Microsoft Yahei';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul,
+ol,
+dd,
+dt,
+dl {
+    list-style: none outside none;
+}
+
+@green: rgba(45, 190, 96, .8);
+@white: rgba(255, 255, 255, .8);
+
+body {
+    min-height: 1700px;
+    background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.thumbnails-all {
+    display: block;
+    overflow-x: hidden;
+    width: 100%;
+    text-align: center;
+    .thumbnails_list {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        li {
+            position: relative;
+            display: block;
+            float: left;
+            box-sizing: border-box;
+            width: 25%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                border: none;
+                transition: all 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+            }
+        }
+        &:after {
+            display: table;
+            content: '';
+        }
+        .img-hover {
+            box-sizing: border-box;
+            .img-hover-text {
+                position: absolute;
+                top: 35%;
+                z-index: 10;
+                width: 100%;
+                .ct-h3-sm {
+                    height: 60px;
+                    line-height: 1.5;
+                    color: #fff;
+                }
+            }
+            .img-hover-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                box-sizing: border-box;
+                transition: all 0.3s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+                opacity: 0.7;
+                background-color: #6786a1;
+                z-index: 9;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+                .img-hover-bg {
+                    opacity: 0.1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .thumbnails-all {
+        .thumbnails_list {
+            li {
+                width: 25%;
+            }
+        }
+    }
+}
+
+
+/*pad and phone style */
+
+@media (max-width: 767px) {
+    .thumbnails-all {
+        .thumbnails_list {
+            li {
+                width: 50%;
+            }
+        }
+    }
+}

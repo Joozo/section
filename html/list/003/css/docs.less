@@ -1,0 +1,92 @@
+/*common style*/
+
+* {
+    font-family: 'Microsoft Yahei';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul,
+ol,
+dd,
+dt,
+dl {
+    list-style: none outside none;
+}
+
+@green: rgba(45, 190, 96, .8);
+@white: rgba(255, 255, 255, .8);
+
+body {
+    min-height: 1700px;
+    background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.text-lists {
+    font-family: "Microsoft Yahei";
+    .news-table {
+        list-style: none;
+        padding: 0;
+        margin: 2em 0;
+        li {
+            display: table;
+            width: 100%;
+            background-color: #f5f4f3;
+            color: #5b5b5b;
+            display: table-row;
+            border-bottom: 1px solid #dcdddd;
+            transition: all 250ms 50ms ease-in-out;
+            .date {
+                width: 80px;
+                padding: .5em 0;
+                color: #cbcecf;
+                background: #f8f7f7;
+                text-align: center;
+                line-height: 1.1em;
+                font-size: 21px;
+                text-transform: uppercase;
+                margin-right: 1em;
+                height: 100%;
+                border-right: 1px solid white;
+                display: table-cell;
+                vertical-align: middle;
+                font-weight: 600;
+                transition: all 250ms 50ms ease-in-out;
+                .strong {
+                    font-size: 36px;
+                    display: block;
+                }
+            }
+            .title {
+                padding: .5em 1em 1em;
+                display: table-cell;
+                .text-h4 {
+                    display: block;
+                    margin: .3em 0;
+                    color: #5b5b5b;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+                .text-p {
+                    display: block;
+                    margin: 0;
+                    font-size: 14px;
+                    line-height: 1.3em;
+                    color: #5b5b5b;
+                }
+            }
+            &:hover {
+                background: @green;
+                *, .title .text-h4, .title .text-p {
+                    color: #fff;
+                }
+                .date {
+                    background: (@green + 20);
+                    border-right: 1px solid (@green + 25);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+/*common style*/
+* {
+  font-family: 'Microsoft Yahei';
+  box-sizing: border-box;
+  text-decoration: none;
+}
+ul,
+ol,
+dd,
+dt,
+dl {
+  list-style: none outside none;
+}
+body {
+  min-height: 1700px;
+  background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+.pricing-table {
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+.pricing-table .ct-center .text-h3 {
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+.pricing-table .ct-center .text-p {
+  padding-bottom: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.pricing-table .plan {
+  position: relative;
+  margin-bottom: 70px;
+}
+.pricing-table .pricing-area .heading-one,
+.pricing-table .pricing-area .heading-two,
+.pricing-table .pricing-area .heading-three {
+  padding: 17px 0;
+  margin-left: -10px;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+  -webkit-transform: translate3d(5px, -5px, 0);
+          transform: translate3d(5px, -5px, 0);
+}
+.pricing-table .pricing-area .heading-one:hover,
+.pricing-table .pricing-area .heading-two:hover,
+.pricing-table .pricing-area .heading-three:hover {
+  background: #000;
+  cursor: pointer;
+}
+.pricing-table .img {
+  position: absolute;
+  right: 7px;
+  top: -5px;
+  z-index: 9;
+}
+.pricing-table .pricing-area ul.pri {
+  background: #FAFAFA;
+  padding: 0;
+  margin: 0;
+}
+.pricing-table .pricing-area ul.pri li {
+  list-style: none;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.pricing-table .pricing-area ul.pri li:nth-child(even) {
+  background: #f5f5f5;
+}
+.pricing-table .pricing-area .heading-one,
+.pricing-table .pricing-area .price-one .plan-action .btn {
+  background: #e24f43;
+  color: #fff;
+}
+.pricing-table .pricing-area .heading-two,
+.pricing-table .pricing-area .price-two .plan-action .btn {
+  background: #27AE60;
+  color: #fff;
+}
+.pricing-table .pricing-area .heading-three,
+.pricing-table .pricing-area .price-three .plan-action .btn {
+  background: #f39c12;
+  color: #fff;
+}
+.pricing-table .plan-action {
+  height: 40px;
+}
+.pricing-table .pricing-area .plan-action .btn {
+  position: relative;
+  padding: 5px 20px;
+  color: #fff;
+  margin-top: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+.pricing-table .pricing-area .plan-action .btn:hover {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.pricing-table a.btn,
+.pricing-table .btn:focus {
+  outline: 0;
+}
+.pricing-table .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #0BA9F9;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation: fadeInDown 1s ease both;
+          animation: fadeInDown 1s ease both;
+}
+.fadeInDown.delay2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.fadeInDown.delay6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.fadeInDown.delay9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}

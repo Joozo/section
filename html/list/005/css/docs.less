@@ -1,0 +1,153 @@
+/*common style*/
+
+* {
+    font-family: 'Microsoft Yahei';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul,
+ol,
+dd,
+dt,
+dl {
+    list-style: none outside none;
+}
+
+@green: rgba(45, 190, 96, .8);
+@white: rgba(255, 255, 255, .8);
+body {
+    min-height: 1700px;
+    background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.pricing-table {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    .ct-center .text-h3 {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: @white;
+        font-weight: 400;
+    }
+    .ct-center .text-p {
+        padding-bottom: 20px;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .plan {
+        position: relative;
+        margin-bottom: 70px;
+    }
+    .pricing-area .heading-one,
+    .pricing-area .heading-two,
+    .pricing-area .heading-three {
+        padding: 17px 0;
+        margin-left: -10px;
+        border-radius: 8px;
+        transition: all 0.5s ease-in-out;
+        transform: translate3d(5px, -5px, 0);
+        &:hover {
+            background: #000;
+            cursor: pointer;
+        }
+    }
+    .img {
+        position: absolute;
+        right: 7px;
+        top: -5px;
+        z-index: 9;
+    }
+    .pricing-area ul.pri {
+        background: #FAFAFA;
+        padding: 0;
+        margin: 0;
+    }
+    .pricing-area ul.pri li {
+        list-style: none;
+        padding: 15px 0;
+        font-size: 16px;
+        font-weight: 400;
+        &:nth-child(even) {
+            background: #f5f5f5;
+        }
+    }
+    .pricing-area .heading-one,
+    .pricing-area .price-one .plan-action .btn {
+        background: #e24f43;
+        color: #fff;
+    }
+    .pricing-area .heading-two,
+    .pricing-area .price-two .plan-action .btn {
+        background: #27AE60;
+        color: #fff;
+    }
+    .pricing-area .heading-three,
+    .pricing-area .price-three .plan-action .btn {
+        background: #f39c12;
+        color: #fff;
+    }
+    .plan-action {
+        height: 40px;
+    }
+    .pricing-area .plan-action .btn {
+        position: relative;
+        padding: 5px 20px;
+        color: #fff;
+        margin-top: 5px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(0.95);
+        }
+    }
+    a.btn,
+    .btn:focus {
+        outline: 0;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: #0BA9F9;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation: fadeInDown 1s ease both;
+    &.delay2 {
+        animation-delay: 0.2s;
+    }
+    &.delay6 {
+        animation-delay: 0.6s;
+    }
+    &.delay9 {
+        animation-delay: 0.9s;
+    }
+}
