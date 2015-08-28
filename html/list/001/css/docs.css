@@ -1,4 +1,3 @@
-/*common style*/
 * {
   font-family: 'Microsoft Yahei';
   box-sizing: border-box;
@@ -12,8 +11,7 @@ dl {
   list-style: none outside none;
 }
 body {
-  min-height: 1700px;
-  background: url(http://section.joo.pub/libs/img/bg/light3.jpg) no-repeat center center fixed;
+  background: url(http://csstoolkits.com/images/bg/09.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 .ct-bg {
@@ -80,9 +78,7 @@ body {
 .thumbs-all .portfolio_list li {
   position: relative;
   display: block;
-  float: left;
   box-sizing: border-box;
-  width: 25%;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -150,9 +146,6 @@ body {
   .thumbs-all p.title-detail {
     font-size: 18px !important;
   }
-  .thumbs-all .portfolio_list li {
-    width: 25%;
-  }
 }
 /*pad and phone style */
 @media (max-width: 767px) {
@@ -171,8 +164,5 @@ body {
   }
   .thumbs-all p.title-detail {
     font-size: 18px !important;
-  }
-  .thumbs-all .portfolio_list li {
-    width: 50%;
   }
 }

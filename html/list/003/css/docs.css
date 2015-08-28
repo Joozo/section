@@ -12,8 +12,7 @@ dl {
   list-style: none outside none;
 }
 body {
-  min-height: 1700px;
-  background: url(http://section.joo.pub/libs/img/bg/light1.jpg) no-repeat center center fixed;
+  background: url(http://csstoolkits.com/images/bg/01.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 .text-lists {
@@ -83,6 +82,6 @@ body {
   color: #fff;
 }
 .text-lists .news-table li:hover .date {
-  background: #41d274;
-  border-right: 1px solid #46d779;
+  background: #2dbe60;
+  border-right: 1px solid #2dbe60;
 }

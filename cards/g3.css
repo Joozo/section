@@ -1,0 +1,335 @@
+* {
+  font-family: "Microsoft Yahei";
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+.g3-section {
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+}
+.g3-section .g3-functions {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 10003;
+}
+.g3-section .g3-functions a {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  list-style: none;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(20, 20, 20, 0.8);
+  opacity: 0.5;
+}
+.g3-section .g3-functions a:hover {
+  opacity: 1;
+}
+.g3-section .g3-functions .on {
+  background-color: #2baf2b;
+  opacity: 1;
+}
+.g3-section .g3-editable,
+.g3-section .g3-addable {
+  position: relative;
+}
+.g3-section .g3-editable .ct-card,
+.g3-section .g3-addable .ct-card {
+  z-index: 10004;
+  overflow: visible;
+  cursor: default;
+  position: absolute;
+  font-size: 12px;
+  text-align: left;
+  font-weight: normal;
+  line-height: 30px;
+}
+.g3-section .g3-editable .ct-card .__action,
+.g3-section .g3-addable .ct-card .__action {
+  font-size: 15px;
+}
+.g3-section .g3-editor {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  top: 0;
+  left: 0;
+  padding: 5px;
+  margin-top: -6px;
+  margin-left: -6px;
+  z-index: 10004;
+}
+.g3-section .g3-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #3bbf38;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: -6px;
+  margin-left: -6px;
+  z-index: 10001;
+  border-radius: 2px;
+}
+.g3-section .g3-btn {
+  position: absolute !important;
+  width: 62px !important;
+  height: 26px !important;
+  text-align: center !important;
+  line-height: 26px !important;
+  background: #3bbf38 !important;
+  border-radius: 3px !important;
+  top: 50% !important;
+  margin-top: -14px !important;
+  left: 50% !important;
+  margin-left: -31px !important;
+  box-shadow: 0 0 5px #999 !important;
+  font-weight: normal;
+  font-size: 12px !important;
+  color: #fff !important;
+  text-decoration: initial !important;
+  z-index: 10002;
+}
+.g3-section .g3-btn-add {
+  display: inline-block;
+  width: 62px !important;
+  height: 26px !important;
+  text-align: center !important;
+  line-height: 26px !important;
+  background: #3bbf38 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 0 5px #999 !important;
+  font-weight: normal;
+  font-size: 12px !important;
+  color: #fff !important;
+  text-decoration: initial !important;
+  z-index: 10002;
+}
+.g3-section .g3-btn-add-h {
+  margin-left: 10px;
+}
+.g3-section .g3-btn-add-v {
+  margin-top: 10px;
+}
+.g3-section .g3-form {
+  text-align: left;
+}
+.g3-section .g3-form .g3-input-field {
+  padding-bottom: 5px;
+}
+.g3-section .g3-form .g3-input-label {
+  font-size: 0.8rem;
+  color: #9E9E9E;
+  display: block;
+}
+.g3-section .g3-form .g3-input-text {
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  padding: 5px 0;
+  border: 0 none;
+  border-bottom: 1px solid #dcdcdc;
+  background: transparent;
+  font-size: 14px;
+}
+.g3-section .g3-form .g3-input-text:focus {
+  margin-bottom: -1px;
+  border-bottom: 2px solid #dcdcdc;
+}
+.g3-section .g3-form .g3-input-textarea {
+  width: 100%;
+  height: 66px;
+  line-height: 22px;
+  padding: 5px 0;
+  border: 0 none;
+  border: 1px solid #dcdcdc;
+  background: transparent;
+  font-size: 14px;
+}
+.g3-section .g3-form .g3-input-textarea:focus {
+  margin-bottom: -1px;
+  border-bottom: 2px solid #dcdcdc;
+}
+.g3-section .g3-form .g3-input-error {
+  margin-bottom: -1px;
+  border-bottom: 2px solid #f36c60;
+}
+.g3-section .g3-form .g3-input-select {
+  height: 31px;
+  border: 0 none;
+  border-bottom: 1px solid #DCDCDC;
+  position: relative;
+}
+.g3-section .g3-form .g3-input-select .val {
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.g3-section .g3-form .g3-input-select .fa {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  font-size: 12px;
+}
+.g3-section .g3-form .g3-input-select .option_box {
+  width: 225px;
+  border: 1px solid #dcdcdc;
+  padding: 5px;
+  background: #fff;
+  color: #757575;
+  display: none;
+  border-radius: 3px;
+  position: absolute;
+  top: 31px;
+  z-index: 10002;
+}
+.g3-section .g3-form .g3-input-select .option_box .option_box_title {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 5px;
+  font-size: 12px;
+  cursor: default;
+  line-height: 1;
+  color: #9E9E9E;
+}
+.g3-section .g3-form .g3-input-select .option_box p {
+  padding: 5px 3px;
+  font-size: 14px;
+  width: 105px;
+  float: left;
+  cursor: pointer;
+}
+.g3-section .g3-form .g3-input-select .option_box p.selected {
+  font-weight: bold;
+}
+.g3-section .g3-form .g3-input-select .option_box p:hover {
+  background: #ccc;
+}
+.g3-section .g3-form .g3-input-select .option_box p.one_column {
+  width: 100%;
+  float: inherit;
+  line-height: 1;
+}
+.g3-section .g3-form .g3-input-checkbox {
+  display: none
+  /* checkbox aspect */
+}
+.g3-section .g3-form .g3-input-checkbox + label {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 0.8rem;
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -ms-user-select: none
+  /* IE10+ */
+}
+.g3-section .g3-form .g3-input-checkbox + label:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 1px;
+  margin-top: 2px;
+}
+.g3-section .g3-form .g3-input-checkbox:not(:checked):disabled + label:before {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+.g3-section .g3-form .g3-input-checkbox:checked + label:before {
+  top: -1px;
+  left: -3px;
+  width: 6px;
+  height: 12px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.g3-section .g3-form .g3-input-checkbox:checked:disabled + label:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+}
+.g3-section .g3-form .g3-input-toolbar a {
+  width: 45px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+}
+.g3-section .g3-form .g3-input-editor {
+  height: 250px !important;
+  line-height: 1.2em !important;
+  margin: 0 !important;
+  color: rgba(20, 20, 20, 0.8) !important;
+  background-color: #fff !important;
+  border: 1px solid #808080 !important;
+  border-radius: 0 !important;
+  padding: 5px !important;
+  cursor: text !important;
+  position: static !important;
+  width: 467px !important;
+}
+.g3-head {
+  text-align: center;
+}
+.g3-head img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.g3-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  flex-warp: nowarp;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 10px;
+}
+.g3-tabs .g3-tab {
+  float: left;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 10px 0;
+  margin-right: 7px;
+  text-align: center;
+  border-bottom: 2px transparent solid;
+}
+.g3-tabs .g3-tab:last-child {
+  margin-right: 0;
+}
+.g3-tabs .g3-tab:hover,
+.g3-tabs .g3-tab.active {
+  border-bottom-color: #ffeb3b;
+  color: #ffffff;
+}

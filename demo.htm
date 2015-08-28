@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>005 Pricing table</title>
+    <link href="http://git.hub/GitHub/csstoolkits/dist/css/ct.min.css" rel="stylesheet">
+</head>
+<style type="text/css">
+.ct-container {
+    margin: 50px auto;
+}
+.box {
+    display: flex;
+    flex-warp: warp;
+}
+
+.gird {
+    flex: 1;
+}
+section.sale-item {
+    border-radius: 15px;
+    border: solid 1px green;
+    background: pink;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 15px;
+}
+</style>
+
+<body>
+    <div class="ct-container">
+        <ul class="box">
+            <li class="gird ct-bg-green ct-m">class="ct-container pricing-table"</li>
+            <li class="gird ct-bg-yellow ct-m">class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"</li>
+            <li class="gird ct-bg-green-300 ct-m">iner pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"</li>
+        </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="ct-container ct-p-lg">
+        <div class="ct-row">
+            <div class="ct-md-6 ct-bg-red">ct-md-6</div>
+            <div class="ct-md-6 ct-bg-purple-700">icing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-table"class="ct-container pricing-tabl</div>
+        </div>
+    </div>
+    <style>
+    #main {
+        width: 100%;
+        height: 120px;
+        display: -webkit-flex;
+        /* Safari */
+        display: flex;
+    }
+    /* Standard syntax */
+    
+    #main div:nth-of-type(1) {
+        flex-grow: 2;
+    }
+    
+    #main div:nth-of-type(2) {
+        flex-grow: 2;
+    }
+    
+    #main div:nth-of-type(3) {
+        flex-grow: 2;
+    }
+    
+    #main div:nth-of-type(4) {
+        flex-grow: 2;
+    }
+    
+    #main div:nth-of-type(5) {
+        flex-grow: 1;
+    }
+    </style>
+    <div id="main" class="ct-container ct-p-lg">
+        <div style="background-color:coral;"></div>
+        <div style="background-color:lightblue;"></div>
+        <div style="background-color:khaki;"></div>
+        <div style="background-color:pink;"></div>
+        <div style="background-color:lightgrey;"></div>
+    </div>
+    <div id="main">
+        <!-- 伸缩项目：块级子元素 -->
+        <div id="item1" style="background-color:lightgrey;">块</div>
+        <!-- 伸缩项目：浮动元素 ― 使用者代理会忽略浮动 -->
+        <div id="item2" style="float: left;background-color:khaki;">浮动</div>
+        <!-- 伸缩项目：包着行内内容的无名块盒 -->
+        无名项目 3
+        <!-- 伸缩项目：行内子元素 -->
+        <div id="item4" style="background-color:pink;">span</div>
+        <!-- 伸缩项目：<span> 变成 'display: block'，所以没有行内块现象。-->
+        <span style="background-color:lightblue;">
+        项目 5
+        项目 5
+    </span>
+    </div>
+    <div class="ct-container ct-m-lg">
+        <style type="text/css">
+        #deals {
+            display: flex;
+            /* Flex layout so items have equal height */
+            flex-flow: row wrap;
+            /* Allow items to wrap into multiple lines */
+            justify-content: space-between;
+        }
+        
+        .sale-item {
+            display: flex;
+            /* Lay out each item using flex layout */
+            flex-flow: column;
+            /* Lay out item’s contents vertically */
+            flex: 1;
+        }
+        
+        .sale-item > img {
+            order: -1;
+            /* Shift image before other content (in visual order) */
+            align-self: center;
+            /* Center the image cross-wise (horizontally) */
+        }
+        
+        .sale-item > button {
+            margin-top: auto;
+            /* Auto top margin pushes button to bottom */
+        }
+        </style>
+        <section id="deals">
+            <section class="sale-item">
+                <h1>Computer Starter Kit</h1>
+                <p>This is the best computer money can buy, if you don’t have much money.</p>
+                <ul>
+                    <li>Computer</li>
+                    <li>Monitor</li>
+                    <li>Keyboard</li>
+                    <li>Keyboard</li>
+                    <li>Keyboard</li>
+                    <li>Keyboard</li>
+                    <li>Mouse</li>
+                </ul>
+                <img src="http://section.joo.pub/libs/img/square/a.jpg" alt="You get: a white computer with matching peripherals.">
+                <button class="ct-btn ct-bg-green ct-block ct-m-lg">BUY NOW</button>
+            </section>
+            <section class="sale-item">
+                <h1>Computer Starter Kit</h1>
+                <p>This is the best computer money can buy, if you don’t have much money.</p>
+                <ul>
+                    <li>Computer</li>
+                    <li>Monitor</li>
+                    <li>Keyboard</li>
+                    <li>Mouse</li>
+                </ul>
+                <img src="http://section.joo.pub/libs/img/logo/logo-green-small.png" alt="You get: a white computer with matching peripherals.">
+                <button class="ct-btn ct-bg-green ct-block ct-m-lg">BUY NOW</button>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>
